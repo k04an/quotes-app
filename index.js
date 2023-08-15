@@ -5,7 +5,7 @@ const random = require('./randomstuff')
 app.set('view engine', 'ejs')
 
 app.get('/', async (req, res) => {
-    res.render('index', {
+    res.render('index.ejs', {
         quote: (await getQuote())[0],
         appeal: random.getAppeal(),
         appealColor: random.getColor(),
