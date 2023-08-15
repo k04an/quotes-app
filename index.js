@@ -17,6 +17,8 @@ app.get('*', (req, res) => {
     res.redirect('/')
 })
 
-app.listen(5656, () => {
+app.listen(80, () => {
     console.log('Web server is up ✅')
 })
+
+module.exports = app
